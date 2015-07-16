@@ -1,22 +1,22 @@
 {
-  "context": "client",
-  "identifier": "com.uberent.pa.PAFX",
-  "display_name": "PA-FX",
-  "description": "Adding more effects to Buildings & Units",
-  "author": "Alpha2546, Fr33Lancer",
-  "version": "2.5",
-  "build": "78071",
-  "date": "2015/02/12",
-  "signature": "not yet implemented",
-  "forum": "https://forums.uberent.com/threads/rel-pa-fx-moar-effects-in-pa-75499.66155/",
-  "icon": "https://i.imgflip.com/ekl6p.gif",
-  "category": [
-	  "in-game",
-	  "shader",
-	  "colours",
-	  "particles",
-	  "effects",
-	  "buildings"
+    "context": "client",
+    "identifier": "com.uberent.pa.PAFX",
+    "display_name": "PA-FX",
+    "description": "Adding more effects to Buildings & Units",
+    "author": "Alpha2546, Fr33Lancer",
+    "version": "2.5",
+    "signature": "not yet implemented",
+    "forum": "https://forums.uberent.com/threads/rel-pa-fx-moar-effects-in-pa-75499.66155/",
+    "icon": "https://i.imgflip.com/ekl6p.gif",
+    "category": [
+        "in-game",
+        "shader",
+        "colours",
+        "particles",
+        "effects",
+        "buildings"
     ],
-  "priority": 100
+    "priority": 100,
+    "build": "83796",
+    "date": "2015/07/16"
 }

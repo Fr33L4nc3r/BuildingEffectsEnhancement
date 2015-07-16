@@ -1,0 +1,5616 @@
+{
+  "options": {
+    "output_dir": ".",
+    "pretty_print_effects": true,
+    "indent": 2
+  },
+  "modinfo": {
+    "context": "client",
+    "identifier": "com.uberent.pa.PAFX",
+    "display_name": "PA-FX",
+    "description": "Adding more effects to Buildings & Units",
+    "author": "Alpha2546, Fr33Lancer",
+    "version": "2.5",
+    "signature": "not yet implemented",
+    "forum": "https://forums.uberent.com/threads/rel-pa-fx-moar-effects-in-pa-75499.66155/",
+    "icon": "https://i.imgflip.com/ekl6p.gif",
+    "category": [
+      "in-game",
+      "shader",
+      "colours",
+      "particles",
+      "effects",
+      "buildings"
+    ],
+    "priority": 100
+  },
+  "mod": [
+    {
+      "target": "pa/units/air/air_factory/air_factory.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory/light_build.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_2_2.pfx",
+            "offset": [
+              0,
+              -9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4_1.pfx",
+            "offset": [
+              7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4_1.pfx",
+            "offset": [
+              -7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4.pfx",
+            "offset": [
+              7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4.pfx",
+            "offset": [
+              -7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory/dot_1.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              -9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              -9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory/dot_1.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4.pfx",
+            "offset": [
+              -7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4.pfx",
+            "offset": [
+              7.25,
+              7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4_1.pfx",
+            "offset": [
+              -7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_4_1.pfx",
+            "offset": [
+              7.25,
+              -7.25,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_2_2.pfx",
+            "offset": [
+              0,
+              -9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_outsideRing",
+            "filename": "/pa/units/air/air_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              9.4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory/light_build.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/air/air_factory_adv/air_factory_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory_adv/dot_1.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory_adv/light_build.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle02",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle04",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle06",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              -12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle04",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle06",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle06",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle04",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              -12.3,
+              -5,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle08",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle06",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle04",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle02",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/air/air_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              0,
+              1.45,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory_adv/light_build.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/air/air_factory_adv/dot_1.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/air_defense/air_defense.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "socket_leftMuzzle",
+              "filename": "/pa/units/land/air_defense/aa_lights.pfx",
+              "offset": [
+                0,
+                0.75,
+                2.1
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "socket_rightMuzzle",
+              "filename": "/pa/units/land/air_defense/aa_lights.pfx",
+              "offset": [
+                0,
+                0.75,
+                2.1
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/air_defense_adv/air_defense_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "socket_leftMuzzle01",
+              "filename": "/pa/units/land/air_defense_adv/aa_lights.pfx",
+              "offset": [
+                0,
+                4.5,
+                1.55
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "socket_rightMuzzle01",
+              "filename": "/pa/units/land/air_defense_adv/aa_lights.pfx",
+              "offset": [
+                0,
+                4.5,
+                1.55
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/anti_nuke_launcher/anti_nuke_launcher.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_radarPitch",
+            "filename": "/pa/effects/specs/light_2_2_2.pfx",
+            "offset": [
+              3.5,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_radarPitch",
+            "filename": "/pa/effects/specs/light_2_2_2.pfx",
+            "offset": [
+              3.5,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/bot_factory/bot_factory.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/light_build.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/dot_1.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armShoulder01",
+            "filename": "/pa/units/land/bot_factory/light_build_bone.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              -1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armShoulder02",
+            "filename": "/pa/units/land/bot_factory/light_build_bone.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armShoulder01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              -1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armShoulder02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP FIRST RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              8.2,
+              3.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP SECOND RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              10.8,
+              2.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP THIRD RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              13.2,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP FIRST LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -9.8,
+              3.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP SECOND LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -12.2,
+              2.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP THIRD LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -14.8,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP THIRD LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -14.8,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP SECOND LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -12.2,
+              2.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP FIRST LEFT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              -9.8,
+              3.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP THIRD RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              13.2,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP SECOND RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              10.8,
+              2.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMP FIRST RIGHT",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/ramp_light_3_1.pfx",
+            "offset": [
+              3.7,
+              8.2,
+              3.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armShoulder02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armShoulder01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              -1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armShoulder02",
+            "filename": "/pa/units/land/bot_factory/light_build_bone.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armShoulder01",
+            "filename": "/pa/units/land/bot_factory/light_build_bone.pfx",
+            "offset": [
+              2.5,
+              1.3,
+              -1.4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/dot_1.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory/light_build.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/bot_factory_adv/bot_factory_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory_adv/light_build.pfx",
+            "offset": [
+              15,
+              0,
+              10.7
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory_adv/dot_1.pfx",
+            "offset": [
+              15,
+              0,
+              10.7
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow03",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow02",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow01",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              -1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              -1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              -1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow02",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_armElbow03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow01",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              -1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow02",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              1.2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_armElbow03",
+            "filename": "/pa/units/land/bot_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              3.0,
+              0.3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory_adv/dot_1.pfx",
+            "offset": [
+              15,
+              0,
+              10.7
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/bot_factory_adv/light_build.pfx",
+            "offset": [
+              15,
+              0,
+              10.7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/control_module/control_module.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip1.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              -19.8,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip2.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              0.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip3.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              20.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip1.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              19.8,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip2.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              -0.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip3.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              -20.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip3.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              -20.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip2.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              -0.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip1.pfx",
+            "bone": "bone_leftShieldSet",
+            "offset": [
+              22,
+              19.8,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip3.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              20.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip2.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              0.2,
+              4
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "filename": "/pa/units/land/control_module/PulseStrip1.pfx",
+            "bone": "bone_rightShieldSet",
+            "offset": [
+              22,
+              -19.8,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/energy_plant_adv/energy_plant_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              0,
+              -7.66,
+              21.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              -7.66,
+              0,
+              21.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              7.66,
+              0,
+              21.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              7.66,
+              0,
+              21.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              -7.66,
+              0,
+              21.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "offset": [
+              0,
+              -7.66,
+              21.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/energy_storage/energy_storage.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "filename": "/pa/units/land/energy_storage/energy_storage.pfx",
+              "offset": [
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_antenna01",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                5.15,
+                5.15,
+                13
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_antenna01",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                -5.15,
+                -5.15,
+                13
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_antenna01",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                -5.15,
+                5.15,
+                13
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_antenna01",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                5.15,
+                -5.15,
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/laser_defense/laser_defense.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense/turret_lights.pfx",
+              "offset": [
+                2.05,
+                -4.9,
+                0.2
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense/turret_lights.pfx",
+              "offset": [
+                -2.05,
+                -4.9,
+                0.2
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/laser_defense_adv/laser_defense_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense_adv/turret_light_middle.pfx",
+              "offset": [
+                0,
+                -5.4,
+                3.4
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense_adv/turret_lights.pfx",
+              "offset": [
+                -2.05,
+                -4.15,
+                1.8
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense_adv/turret_lights.pfx",
+              "offset": [
+                2.05,
+                -4.15,
+                1.8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/laser_defense_single/laser_defense_single.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "bone_pitch",
+              "filename": "/pa/units/land/laser_defense_single/turret_lights.pfx",
+              "offset": [
+                -1.1,
+                -3.625,
+                0.85
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/metal_extractor/metal_extractor.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "filename": "/pa/units/land/metal_extractor/metal_extractor_idle.pfx",
+              "offset": [
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_root",
+              "filename": "/pa/units/land/metal_extractor/lightblink_2_2_2.pfx",
+              "offset": [
+                0,
+                0,
+                9.7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "filename": "/pa/units/land/metal_extractor_adv/metal_extractor_adv.pfx",
+              "offset": [
+                0,
+                0,
+                5
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/metal_storage/metal_storage.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "filename": "/pa/units/land/metal_storage/metal_storage.pfx",
+              "offset": [
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_root",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                -2.5,
+                8.157,
+                12.7
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_root",
+              "filename": "/pa/effects/specs/stable_light_2.pfx",
+              "offset": [
+                2.5,
+                8.157,
+                12.7
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/nuke_launcher/nuke_launcher.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              0,
+              5.2,
+              23.5
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              0,
+              4.3,
+              21.85
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              0,
+              4.3,
+              21.85
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              0,
+              5.2,
+              23.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "filename": "/pa/units/land/tactical_missile_launcher/light_2_3_3.pfx",
+              "offset": [
+                3.9,
+                0.6,
+                8.8
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_root",
+              "filename": "/pa/units/land/tactical_missile_launcher/light_2_3_1.pfx",
+              "offset": [
+                -3.9,
+                -0.6,
+                8.8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/teleporter/teleporter.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna Right",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              17.1,
+              -11,
+              11.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna Right",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              18.9,
+              -11,
+              9.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna Left",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -17.1,
+              -11,
+              11.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPLEFT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -6.75,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPMIDDLE",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              0,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPRIGHT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              6.75,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGRIGHT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              6.75,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGMIDDLE",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              0,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGLEFT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -6.75,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna Left",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -18.9,
+              -11,
+              9.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna Left",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -18.9,
+              -11,
+              9.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGLEFT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -6.75,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGMIDDLE",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              0,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPBIGRIGHT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_big_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              6.75,
+              15.2,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPRIGHT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              6.75,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPMIDDLE",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              0,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "RAMPLEFT",
+            "type": "idle",
+            "filename": "/pa/units/land/teleporter/ramp_light_1.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -6.75,
+              4.8,
+              1.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna Left",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              -17.1,
+              -11,
+              11.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna Right",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              18.9,
+              -11,
+              9.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna Right",
+            "type": "idle",
+            "filename": "/pa/effects/specs/stable_light_2.pfx",
+            "bone": "bone_root",
+            "offset": [
+              17.1,
+              -11,
+              11.8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/vehicle_factory/vehicle_factory.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar001",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_bar002",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar001",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              -6.1,
+              2.1,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_2.pfx",
+            "offset": [
+              0,
+              0.3,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_bar002",
+            "filename": "/pa/units/land/vehicle_factory/light_build_bone_1.pfx",
+            "offset": [
+              6.1,
+              2.1,
+              0.6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/land/vehicle_factory_adv/vehicle_factory_adv.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "Bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "Bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_2.pfx",
+            "offset": [
+              21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "Bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_1.pfx",
+            "offset": [
+              21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_2.pfx",
+            "offset": [
+              -21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "Bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_1.pfx",
+            "offset": [
+              -21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "Bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_1.pfx",
+            "offset": [
+              -21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_2.pfx",
+            "offset": [
+              -21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "Bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_1.pfx",
+            "offset": [
+              21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_2_4_2.pfx",
+            "offset": [
+              21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "Bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "Bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              21,
+              3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              21,
+              -3.5,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/effects/specs/dot_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle07",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_4.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle05",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_3.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle03",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_2.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              -4,
+              0.8,
+              0.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "build",
+            "bone": "socket_nozzle01",
+            "filename": "/pa/units/land/vehicle_factory_adv/light_build_bone_1.pfx",
+            "offset": [
+              4,
+              0.8,
+              0.6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/deep_space_radar/deep_space_radar.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door04",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door03",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door02",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_2.pfx",
+            "offset": [
+              10.9,
+              0,
+              1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_1.pfx",
+            "offset": [
+              8.6,
+              0,
+              2.0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_door01",
+            "filename": "/pa/units/orbital/deep_space_radar/light_strobe1_0.pfx",
+            "offset": [
+              4.3,
+              0,
+              2.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/delta_v_engine/delta_v_engine.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              19.16,
+              19.9,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              19.9,
+              19.16,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              19.16,
+              -19.9,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              19.9,
+              -19.16,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -19.9,
+              -19.16,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -19.16,
+              -19.9,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 4",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -19.9,
+              19.16,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 4",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -19.16,
+              19.9,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 1",
+            "type": "build",
+            "bone": "bone_door01",
+            "filename": "/pa/effects/specs/light_2_4_1_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 2",
+            "type": "build",
+            "bone": "bone_door02",
+            "filename": "/pa/effects/specs/light_2_4_2_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 3",
+            "type": "build",
+            "bone": "bone_door03",
+            "filename": "/pa/effects/specs/light_2_4_3_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 4",
+            "type": "build",
+            "bone": "bone_door04",
+            "filename": "/pa/effects/specs/light_2_4_4_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 1",
+            "type": "idle",
+            "bone": "bone_cross01",
+            "filename": "/pa/effects/specs/light_1_4_4_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 2",
+            "type": "idle",
+            "bone": "bone_cross02",
+            "filename": "/pa/effects/specs/light_1_4_3_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 3",
+            "type": "idle",
+            "bone": "bone_cross03",
+            "filename": "/pa/effects/specs/light_1_4_2_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 4",
+            "type": "idle",
+            "bone": "bone_cross04",
+            "filename": "/pa/effects/specs/light_1_4_1_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 4",
+            "type": "idle",
+            "bone": "bone_cross04",
+            "filename": "/pa/effects/specs/light_1_4_1_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 3",
+            "type": "idle",
+            "bone": "bone_cross03",
+            "filename": "/pa/effects/specs/light_1_4_2_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 2",
+            "type": "idle",
+            "bone": "bone_cross02",
+            "filename": "/pa/effects/specs/light_1_4_3_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Cross 1",
+            "type": "idle",
+            "bone": "bone_cross01",
+            "filename": "/pa/effects/specs/light_1_4_4_2.pfx",
+            "offset": [
+              14.25,
+              0,
+              1.75
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 4",
+            "type": "build",
+            "bone": "bone_door04",
+            "filename": "/pa/effects/specs/light_2_4_4_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 3",
+            "type": "build",
+            "bone": "bone_door03",
+            "filename": "/pa/effects/specs/light_2_4_3_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 2",
+            "type": "build",
+            "bone": "bone_door02",
+            "filename": "/pa/effects/specs/light_2_4_2_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Upper Door 1",
+            "type": "build",
+            "bone": "bone_door01",
+            "filename": "/pa/effects/specs/light_2_4_1_4.pfx",
+            "offset": [
+              9,
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 4",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -19.16,
+              19.9,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 4",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -19.9,
+              19.16,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -19.16,
+              -19.9,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -19.9,
+              -19.16,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              19.9,
+              -19.16,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              19.16,
+              -19.9,
+              20.15
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              19.9,
+              19.16,
+              18.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              19.16,
+              19.9,
+              20.15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/mining_platform/mining_platform.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_2_2.pfx",
+            "offset": [
+              0,
+              -7.9,
+              26.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_3_2.pfx",
+            "offset": [
+              -7.9,
+              0,
+              26.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_1_2.pfx",
+            "offset": [
+              7.9,
+              0,
+              26.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S1-E1",
+            "type": "idle",
+            "bone": "bone_shield01",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_1_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S1-E4",
+            "type": "idle",
+            "bone": "bone_shield01",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_4_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S2-E2",
+            "type": "idle",
+            "bone": "bone_shield02",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_2_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S2-E1",
+            "type": "idle",
+            "bone": "bone_shield02",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_1_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S3-E3",
+            "type": "idle",
+            "bone": "bone_shield03",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_3_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S3-E2",
+            "type": "idle",
+            "bone": "bone_shield03",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_2_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S4-E4",
+            "type": "idle",
+            "bone": "bone_shield04",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_4_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S4-E3",
+            "type": "idle",
+            "bone": "bone_shield04",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_3_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Bottom Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_8.pfx",
+            "offset": [
+              0.5,
+              0.5,
+              -53.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 7",
+            "type": "idle",
+            "bone": "bone_hose01",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_7.pfx",
+            "offset": [
+              0,
+              -5.2,
+              -3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 6",
+            "type": "idle",
+            "bone": "bone_hose02",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_6.pfx",
+            "offset": [
+              0,
+              -11,
+              -2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 5",
+            "type": "idle",
+            "bone": "bone_hose03",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_5.pfx",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 4",
+            "type": "idle",
+            "bone": "bone_hose04",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_4.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 3",
+            "type": "idle",
+            "bone": "bone_hose05",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_3.pfx",
+            "offset": [
+              0,
+              -3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 2",
+            "type": "idle",
+            "bone": "bone_hose06",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_2.pfx",
+            "offset": [
+              0,
+              -8,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 1",
+            "type": "idle",
+            "bone": "bone_hose07",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_1.pfx",
+            "offset": [
+              0,
+              -2,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 1",
+            "type": "idle",
+            "bone": "bone_hose07",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_1.pfx",
+            "offset": [
+              0,
+              -2,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 2",
+            "type": "idle",
+            "bone": "bone_hose06",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_2.pfx",
+            "offset": [
+              0,
+              -8,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 3",
+            "type": "idle",
+            "bone": "bone_hose05",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_3.pfx",
+            "offset": [
+              0,
+              -3,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 4",
+            "type": "idle",
+            "bone": "bone_hose04",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_4.pfx",
+            "offset": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 5",
+            "type": "idle",
+            "bone": "bone_hose03",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_5.pfx",
+            "offset": [
+              0,
+              -4,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 6",
+            "type": "idle",
+            "bone": "bone_hose02",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_6.pfx",
+            "offset": [
+              0,
+              -11,
+              -2
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Straw 7",
+            "type": "idle",
+            "bone": "bone_hose01",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_7.pfx",
+            "offset": [
+              0,
+              -5.2,
+              -3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Bottom Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/straw_2_8_8.pfx",
+            "offset": [
+              0.5,
+              0.5,
+              -53.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S4-E3",
+            "type": "idle",
+            "bone": "bone_shield04",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_3_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S4-E4",
+            "type": "idle",
+            "bone": "bone_shield04",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_4_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S3-E2",
+            "type": "idle",
+            "bone": "bone_shield03",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_2_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S3-E3",
+            "type": "idle",
+            "bone": "bone_shield03",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_3_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S2-E1",
+            "type": "idle",
+            "bone": "bone_shield02",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_1_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S2-E2",
+            "type": "idle",
+            "bone": "bone_shield02",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_2_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S1-E4",
+            "type": "idle",
+            "bone": "bone_shield01",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_4_8.pfx",
+            "offset": [
+              21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Border Light S1-E1",
+            "type": "idle",
+            "bone": "bone_shield01",
+            "filename": "/pa/units/orbital/mining_platform/position_light_1_4_1_8.pfx",
+            "offset": [
+              -21.95,
+              5.1,
+              5.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 3",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_1_2.pfx",
+            "offset": [
+              7.9,
+              0,
+              26.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 2",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_3_2.pfx",
+            "offset": [
+              -7.9,
+              0,
+              26.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Energy Plant Light 1",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/mining_platform/energy_light_2_4_2_2.pfx",
+            "offset": [
+              0,
+              -7.9,
+              26.8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/orbital_fabrication_bot/orbital_fabrication_bot.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_leftSolarPanel",
+            "filename": "/pa/effects/specs/lightblink_2_2_1.pfx",
+            "offset": [
+              12.2,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_rightSolarPanel",
+            "filename": "/pa/effects/specs/lightblink_2_2_2.pfx",
+            "offset": [
+              12,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_rightSolarPanel",
+            "filename": "/pa/effects/specs/lightblink_2_2_2.pfx",
+            "offset": [
+              12,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "type": "idle",
+            "bone": "bone_leftSolarPanel",
+            "filename": "/pa/effects/specs/lightblink_2_2_1.pfx",
+            "offset": [
+              12.2,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/orbital_factory/orbital_factory.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 1",
+            "type": "idle",
+            "bone": "bone_frontArms",
+            "filename": "/pa/effects/specs/light_1_4_3_4.pfx",
+            "offset": [
+              19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 2",
+            "type": "idle",
+            "bone": "bone_backArms",
+            "filename": "/pa/effects/specs/light_1_4_1_4.pfx",
+            "offset": [
+              19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 3",
+            "type": "idle",
+            "bone": "bone_backArms",
+            "filename": "/pa/effects/specs/light_1_4_2_4.pfx",
+            "offset": [
+              -19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 4",
+            "type": "idle",
+            "bone": "bone_frontArms",
+            "filename": "/pa/effects/specs/light_1_4_4_4.pfx",
+            "offset": [
+              -19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Building Antennas",
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_factory/orbital_factory_build_light.pfx"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Bottom Tri Antenna Light",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_factory/orbital_factory_bottom_light.pfx"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Bottom Tri Antenna Light",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_factory/orbital_factory_bottom_light.pfx"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Building Antennas",
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_factory/orbital_factory_build_light.pfx"
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 4",
+            "type": "idle",
+            "bone": "bone_frontArms",
+            "filename": "/pa/effects/specs/light_1_4_4_4.pfx",
+            "offset": [
+              -19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 3",
+            "type": "idle",
+            "bone": "bone_backArms",
+            "filename": "/pa/effects/specs/light_1_4_2_4.pfx",
+            "offset": [
+              -19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 2",
+            "type": "idle",
+            "bone": "bone_backArms",
+            "filename": "/pa/effects/specs/light_1_4_1_4.pfx",
+            "offset": [
+              19.2,
+              -38,
+              0
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Corner Antenna 1",
+            "type": "idle",
+            "bone": "bone_frontArms",
+            "filename": "/pa/effects/specs/light_1_4_3_4.pfx",
+            "offset": [
+              19.2,
+              -38,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/orbital_fighter/orbital_fighter.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Antenna",
+            "type": "build",
+            "bone": "bone_body",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              0,
+              0.15,
+              3.9
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Left Wing",
+            "type": "idle",
+            "bone": "bone_wingTip",
+            "filename": "/pa/effects/specs/light_2_4_3_2.pfx",
+            "offset": [
+              -0.9,
+              3.2,
+              -2.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Left Wing - Moving",
+            "type": "moving",
+            "bone": "bone_wingTip",
+            "filename": "/pa/effects/specs/light_2_4_4_2.pfx",
+            "offset": [
+              -0.9,
+              3.2,
+              -2.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Solar Wing",
+            "type": "idle",
+            "bone": "bone_solarPanel",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -0.3,
+              -8.5,
+              -1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Solar Wing - Moving",
+            "type": "moving",
+            "bone": "bone_solarPanel",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -0.3,
+              -8.5,
+              -1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Solar Wing - Moving",
+            "type": "moving",
+            "bone": "bone_solarPanel",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -0.3,
+              -8.5,
+              -1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Solar Wing",
+            "type": "idle",
+            "bone": "bone_solarPanel",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -0.3,
+              -8.5,
+              -1.3
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Left Wing - Moving",
+            "type": "moving",
+            "bone": "bone_wingTip",
+            "filename": "/pa/effects/specs/light_2_4_4_2.pfx",
+            "offset": [
+              -0.9,
+              3.2,
+              -2.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Left Wing",
+            "type": "idle",
+            "bone": "bone_wingTip",
+            "filename": "/pa/effects/specs/light_2_4_3_2.pfx",
+            "offset": [
+              -0.9,
+              3.2,
+              -2.6
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Antenna",
+            "type": "build",
+            "bone": "bone_body",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              0,
+              0.15,
+              3.9
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/orbital_laser/orbital_laser.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "bone_rotator",
+              "filename": "/pa/effects/specs/light_2_4_1.pfx",
+              "offset": [
+                8.45,
+                1,
+                -3.5
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_rotator",
+              "filename": "/pa/effects/specs/light_2_4_1.pfx",
+              "offset": [
+                -8.45,
+                -1,
+                -3.5
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_rotator",
+              "filename": "/pa/effects/specs/lightblink_1_4_1.pfx",
+              "offset": [
+                7.6,
+                1,
+                -1.3
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_rotator",
+              "filename": "/pa/effects/specs/lightblink_1_4_1.pfx",
+              "offset": [
+                -7.6,
+                -1,
+                -1.3
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/orbital_launcher/orbital_launcher.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -5,
+              9.66,
+              66.83
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -5,
+              10.85,
+              64.33
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Ramp 3",
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_launcher/light_build.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Ramp 3",
+            "type": "build",
+            "bone": "bone_root",
+            "filename": "/pa/units/orbital/orbital_launcher/light_build.pfx",
+            "offset": [
+              23.5,
+              -1.15,
+              4.8
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Little Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+            "offset": [
+              -5,
+              10.85,
+              64.33
+            ]
+          }
+        },
+        {
+          "op": "add",
+          "path": "/fx_offsets/-",
+          "value": {
+            "label": "Big Antenna",
+            "type": "idle",
+            "bone": "bone_root",
+            "filename": "/pa/effects/specs/light_2_4_2_2.pfx",
+            "offset": [
+              -5,
+              9.66,
+              66.83
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "target": "pa/units/orbital/solar_array/solar_array.json",
+      "patch": [
+        {
+          "op": "add",
+          "path": "/fx_offsets",
+          "value": [
+            {
+              "type": "idle",
+              "bone": "bone_body",
+              "filename": "/pa/effects/specs/light_2_4_1.pfx",
+              "offset": [
+                0,
+                -12.5,
+                0
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_body",
+              "filename": "/pa/effects/specs/light_2_4_1_4.pfx",
+              "offset": [
+                0.5,
+                -10,
+                0
+              ]
+            },
+            {
+              "type": "idle",
+              "bone": "bone_body",
+              "filename": "/pa/effects/specs/light_2_4_1_2.pfx",
+              "offset": [
+                -0.5,
+                -11.2,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
